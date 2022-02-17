@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Temples</title>
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Festive&family=Fjalla+One&family=Pacifico&display=swap"
+  rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<link rel="stylesheet" href="styles/main.css">
 <style>
   svg.greencross {
     height: 25px;
@@ -25,15 +31,69 @@
     width: 25px;
   }
 
-  /* .Header_Info,
-  h1,
-  h2,
-  h3 {
+  body {
+    font-family: cursive;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  h1 {
+    font-family: 'Fjalla One', sans-serif;
+    color: green;
+  }
+
+  h2 {
+    font-family: 'Festive', cursive;
+    color: blue;
+  }
+
+  h3 {
+    font-family: 'Pacifico', cursive;
+    color: turquoise;
+  }
+
+  nav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 30px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 </style>
 
 <body>
@@ -71,17 +131,21 @@
       dwells in His temples. The temple is a house of God. It is a place where we make covenants (or promises) with
       Heavenly Father. If we keep our covenants, we will be able to live with Him again.</p>
     <h2>Some of the best Temples</h2>
-    <ol>
+
+    <ul>
       <li>Little Temples</li>
-      <li>
-        Big Temples
-        <ul>
-          <li>Mt Timpanogos</li>
-          <li>Los Angeles</li>
-          <li>Salt Lake</li>
-        </ul>
+      <ul>
+        <li>Manhattan New York</li>
+        <li> Kiev Ukraine</li>
+      </ul>
+      <li>Big Temples</li>
+      <ul>
+        <li>Mt Timpanogos</li>
+        <li>Los Angeles</li>
+        <li>Salt Lake</li>
+      </ul>
       </li>
-    </ol>
+    </ul>
   </aside>
 
   <figure><img src="images/temple.jpg" alt="A temple">
@@ -90,26 +154,33 @@
   <link> <a href="https://en.wikipedia.org/wiki/Salt_Lake_Temple">Learn more about the Salt Lake Temple</a> </link>
 
   <!-- This is my article tag here -->
-  <article>
-    <h3>Baptism and Confirmation Are Essential</h3>
-    <p>The fourth Article of Faith states that the first ordinances of the gospel of Jesus Christ are “baptism by
-      immersion for the remission of sins” and the “laying on of hands for the gift of the Holy Ghost.” Jesus taught
-      that baptism and confirmation are needed for all who want to follow Him and return to our Heavenly Father after
-      this life.</p>
-    <dl>
-      <dt>Go to the Temple</dt>
-      <dd><strong> -Get awesome blessings</strong></dd>
-      <dt>Dont go to the Temple</dt>
-      <dd> -Miss out :( </dd>
-    </dl>
-  </article>
-  <article>
-    <h3>God Loves All of His Children</h3>
-    <p>Every person is a child of God. <em>All</em> are precious to Him. He knows them and He loves them. He declared,
-      “For behold, this is my work and my glory—to bring to pass the immortality and eternal life of man” (Moses 1:39).
-      He has provided a way for all of His children to return to Him after this life. That way is the gospel of Jesus
-      Christ</p>
-  </article>
+  <main>
+    <article>
+      <h3>Baptism and Confirmation Are Essential</h3>
+      <p>The fourth Article of Faith states that the first ordinances of the gospel of Jesus Christ are “baptism by
+        immersion for the remission of sins” and the “laying on of hands for the gift of the Holy Ghost.” Jesus taught
+        that baptism and confirmation are needed for all who want to follow Him and return to our Heavenly Father after
+        this life.</p>
+      <dl>
+        <dt>Go to the Temple</dt>
+        <dd><strong> -Get awesome blessings</strong></dd>
+        <dt>Don't go to the Temple</dt>
+        <dd> -Miss out :( </dd>
+      </dl>
+      <a class="button" style="vertical-align:middle" href="#"><span>Learn More</span></a>
+    </article>
+  </main>
+  <main>
+    <article>
+      <h3>God Loves All of His Children</h3>
+      <p>Every person is a child of God. <em>All</em> are precious to Him. He knows them and He loves them. He declared,
+        “For behold, this is my work and my glory—to bring to pass the immortality and eternal life of man” (Moses
+        1:39).
+        He has provided a way for all of His children to return to Him after this life. That way is the gospel of Jesus
+        Christ</p>
+      <a class="button" style="vertical-align:middle" href="#"><span>Learn More</span></a>
+    </article>
+  </main>
   <footer>
     <p>Temples are really great and there are
       lots of reasons</p>
