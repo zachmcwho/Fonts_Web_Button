@@ -1,13 +1,35 @@
+:root {
+  --text-color: #333;
+  --heading-1-color: green;
+}
+
 svg.greencross {
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+}
+span.inline_SVG_target {
+  position: relative;
 }
 
 .hero img {
   max-width: 1600px;
   width: 100%;
-  height: 500px;
+  
 
+}
+
+a {
+  text-decoration: none;
+
+}
+a:link:hover {
+  text-decoration: underline;
+}
+
+a:not([href]) {
+  color: #333;
 }
 
 img.house_icon {
@@ -17,6 +39,9 @@ img.house_icon {
 
 body {
   font-family: cursive;
+  color: var(--text-color);
+  line-height: 1.4;
+  font-size: large;
 }
 
 h1 {
@@ -27,18 +52,38 @@ h1 {
 h2 {
   font-family: 'Festive', cursive;
   color: blue;
+  margin: (3.5rem, 0, 0)
 }
 
 h3 {
   font-family: 'Pacifico', cursive;
   color: turquoise;
+  margin: (3rem, 0, 0)
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
 nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: red;
 }
+.hero {
+  position: relative;
+}
+.hero h1 {
+  margin: 0;
+}
+.hero .text-overlay {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px 3px rgba(0, 0, .3);
 
+
+}
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -46,7 +91,7 @@ nav {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px;
   width: 100px;
   transition: all 0.5s;
@@ -77,4 +122,36 @@ nav {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 1rem;
+}
+
+.card {
+  position: relative;
+}
+
+.cards .text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(255, 120, 0, 0.8);
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.cards .text-overlay:hover {
+  opacity: 1;
 }
