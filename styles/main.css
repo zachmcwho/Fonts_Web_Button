@@ -1,6 +1,13 @@
 :root {
   --text-color: #333;
   --heading-1-color: green;
+  --heading-2-color: blue;
+  --heading-3-color: turquoise;
+  --button-background-color: #f4511e;
+  --button-color: #FFFFFF;
+  --card-background-color: rgba(255, 120, 0, 0.8);
+
+
 }
 
 svg.greencross {
@@ -29,7 +36,7 @@ a:link:hover {
 }
 
 a:not([href]) {
-  color: #333;
+  color: var(--text-color);
 }
 
 img.house_icon {
@@ -46,18 +53,18 @@ body {
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-  color: green;
+  color: var(--heading-1-color);
 }
 
 h2 {
   font-family: 'Festive', cursive;
-  color: blue;
+  color: var(--heading-2-color);
   margin: (3.5rem, 0, 0)
 }
 
 h3 {
   font-family: 'Pacifico', cursive;
-  color: turquoise;
+  color: var(--heading-3-color);
   margin: (3rem, 0, 0)
 }
 
@@ -87,9 +94,9 @@ nav {
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: var(--button-background-color);
   border: none;
-  color: #FFFFFF;
+  color: var(--button-color);
   text-align: center;
   font-size: 13px;
   padding: 10px;
@@ -146,7 +153,7 @@ img {
   right: 0;
   bottom: 0;
 
-  background-color: rgba(255, 120, 0, 0.8);
+  background-color: var(--card-background-color);
   padding: 2rem;
   opacity: 0;
   transition: opacity 300ms;
